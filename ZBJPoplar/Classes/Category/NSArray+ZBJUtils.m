@@ -9,8 +9,6 @@
 
 @implementation NSArray (ZBJUtils)
 
-//https://github.com/zoubenjun/Repo.git
-
 - (void)ZBJ_each:(ZBJEnumerateBlock)block {
     NSInteger index = 0;
     for (id obj in self) {
