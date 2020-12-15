@@ -1,0 +1,16 @@
+PODS:
+  - ZBJPoplar (0.1.0)
+
+DEPENDENCIES:
+  - ZBJPoplar (from `../`)
+
+EXTERNAL SOURCES:
+  ZBJPoplar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZBJPoplar: 5809f66894abf84eed6cc25190a70a7c8354f0fd
+
+PODFILE CHECKSUM: e9adeebdcd8db06639674b7d0532bd762ee56e61
+
+COCOAPODS: 1.10.0
