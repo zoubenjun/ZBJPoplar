@@ -1,0 +1,6 @@
+framework module Pods_ZBJPoplar_Example {
+  umbrella header "Pods-ZBJPoplar_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

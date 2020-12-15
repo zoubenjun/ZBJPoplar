@@ -1,0 +1,6 @@
+framework module ZBJPoplar {
+  umbrella header "ZBJPoplar-umbrella.h"
+
+  export *
+  module * { export * }
+}

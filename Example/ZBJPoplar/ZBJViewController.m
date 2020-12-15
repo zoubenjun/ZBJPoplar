@@ -7,6 +7,7 @@
 //
 
 #import "ZBJViewController.h"
+#import "NSArray+ZBJUtils.h"
 
 @interface ZBJViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *arr = @[@"a", @"b", @"c"];
+    [arr ZBJ_each:^(NSInteger index, id  _Nullable obj) {
+        NSLog(@"index:%ld, obj:%@", index, obj);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

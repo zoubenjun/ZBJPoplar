@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZBJPoplar'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZBJPoplar.'
+  s.version          = '0.1.1'
+  s.summary          = 'Personal Cagegory, Utils.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,18 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Personal Category, Utils. ZBJPoplar named by my son, a lovely boy.
                        DESC
 
-  s.homepage         = 'https://github.com/502153525@qq.com/ZBJPoplar'
+  s.homepage         = 'https://github.com/zoubenjun/ZBJPoplar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '502153525@qq.com' => '502153525@qq.com' }
-  s.source           = { :git => 'https://github.com/502153525@qq.com/ZBJPoplar.git', :tag => s.version.to_s }
+  s.author           = { 'zoubenjun' => '502153525@qq.com' }
+  s.source           = { :git => 'https://github.com/zoubenjun/ZBJPoplar.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
+  s.frameworks = 'UIKit'
+  # s.public_header_files = 'ZBJPoplar/Classes/**/*.h'
   s.source_files = 'ZBJPoplar/Classes/**/*'
   
   # s.resource_bundles = {
