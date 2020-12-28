@@ -1,6 +1,6 @@
 {
   "name": "ZBJPoplar",
-  "version": "0.1.2",
+  "version": "0.1.10",
   "summary": "Personal Cagegory, Utils.",
   "description": "Personal Category, Utils. ZBJPoplar named by my son, a lovely boy.",
   "homepage": "https://github.com/zoubenjun/ZBJPoplar",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zoubenjun/ZBJPoplar.git",
-    "tag": "0.1.2"
+    "tag": "0.1.10"
   },
   "platforms": {
     "ios": "9.0"
@@ -27,13 +27,13 @@
       "subspecs": [
         {
           "name": "ZBJFoundation",
-          "public_header_files": "ZBJPoplar/Classes/Category/**/*.h",
-          "source_files": "ZBJPoplar/Classes/Category/**/*"
+          "public_header_files": "ZBJPoplar/Classes/Category/ZBJFoundation/**/*.h",
+          "source_files": "ZBJPoplar/Classes/Category/ZBJFoundation/**/*"
         },
         {
           "name": "ZBJKit",
-          "public_header_files": "ZBJPoplar/Classes/Category/**/*.h",
-          "source_files": "ZBJPoplar/Classes/Category/**/*"
+          "public_header_files": "ZBJPoplar/Classes/Category/ZBJKit/**/*.h",
+          "source_files": "ZBJPoplar/Classes/Category/ZBJKit/**/*"
         }
       ]
     }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZBJPoplar'
-  s.version          = '0.1.10'
+  s.version          = '0.1.11'
   s.summary          = 'Personal Cagegory, Utils.'
 
 # This description is used to generate tags and improve search results.
@@ -39,13 +39,13 @@ Pod::Spec.new do |s|
     sp.source_files = 'ZBJPoplar/Classes/Category/**/*'
     
     sp.subspec 'ZBJFoundation' do |sp|
-      sp.public_header_files = 'ZBJPoplar/Classes/Category/**/*.h'
-      sp.source_files = 'ZBJPoplar/Classes/Category/**/*'
+      sp.public_header_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*.h'
+      sp.source_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*'
     end
     
     sp.subspec 'ZBJKit' do |sp|
-      sp.public_header_files = 'ZBJPoplar/Classes/Category/**/*.h'
-      sp.source_files = 'ZBJPoplar/Classes/Category/**/*'
+      sp.public_header_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*.h'
+      sp.source_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*'
     end
   end
   
