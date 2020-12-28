@@ -35,13 +35,13 @@ Pod::Spec.new do |s|
   s.source_files = 'ZBJPoplar/Classes/**/*'
   
   s.subspec 'ZBJFoundation' do |sp|
-    sp.public_header_files = 'ZBJPoplar/Classes/ZBJFoundation/**/*.h'
-    sp.source_files = 'ZBJPoplar/Classes/ZBJFoundation/**/*'
+    sp.public_header_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*.h'
+    sp.source_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*'
   end
   
   s.subspec 'ZBJKit' do |sp|
-    sp.public_header_files = 'ZBJPoplar/Classes/ZBJKit/**/*.h'
-    sp.source_files = 'ZBJPoplar/Classes/ZBJKit/**/*'
+    sp.public_header_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*.h'
+    sp.source_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*'
   end
   
   # s.resource_bundles = {
