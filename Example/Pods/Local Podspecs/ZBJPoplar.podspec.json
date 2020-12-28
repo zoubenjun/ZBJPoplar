@@ -19,5 +19,21 @@
     "ios": "9.0"
   },
   "frameworks": "UIKit",
-  "source_files": "ZBJPoplar/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Category",
+      "subspecs": [
+        {
+          "name": "ZBJFoundation",
+          "public_header_files": "ZBJPoplar/Classes/Category/ZBJFoundation/**/*.h",
+          "source_files": "ZBJPoplar/Classes/Category/ZBJFoundation/**/*"
+        },
+        {
+          "name": "ZBJKit",
+          "public_header_files": "ZBJPoplar/Classes/Category/ZBJKit/**/*.h",
+          "source_files": "ZBJPoplar/Classes/Category/ZBJKit/**/*"
+        }
+      ]
+    }
+  ]
 }

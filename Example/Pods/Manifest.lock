@@ -1,5 +1,11 @@
 PODS:
-  - ZBJPoplar (0.1.2)
+  - ZBJPoplar (0.1.2):
+    - ZBJPoplar/Category (= 0.1.2)
+  - ZBJPoplar/Category (0.1.2):
+    - ZBJPoplar/Category/ZBJFoundation (= 0.1.2)
+    - ZBJPoplar/Category/ZBJKit (= 0.1.2)
+  - ZBJPoplar/Category/ZBJFoundation (0.1.2)
+  - ZBJPoplar/Category/ZBJKit (0.1.2)
 
 DEPENDENCIES:
   - ZBJPoplar (from `../`)
@@ -9,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZBJPoplar: e8546e097f988a5db99e0eb9f981936e22025d01
+  ZBJPoplar: 2561c7044544601d3cc68ed06b4aa8ef3a0c8e34
 
-PODFILE CHECKSUM: e9adeebdcd8db06639674b7d0532bd762ee56e61
+PODFILE CHECKSUM: 4eb778f84a5494b74cc5196ba0d69809c18032f3
 
 COCOAPODS: 1.10.0

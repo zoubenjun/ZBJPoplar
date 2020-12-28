@@ -31,17 +31,19 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.frameworks = 'UIKit'
-  s.public_header_files = 'ZBJPoplar/Classes/**/*.h'
-  s.source_files = 'ZBJPoplar/Classes/**/*'
+#  s.public_header_files = 'ZBJPoplar/Classes/**/*.h'
+#  s.source_files = 'ZBJPoplar/Classes/**/*'
   
-  s.subspec 'ZBJFoundation' do |sp|
-    sp.public_header_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*.h'
-    sp.source_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*'
-  end
-  
-  s.subspec 'ZBJKit' do |sp|
-    sp.public_header_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*.h'
-    sp.source_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*'
+  s.subspec 'Category' do |sp|
+    sp.subspec 'ZBJFoundation' do |sp|
+      sp.public_header_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*.h'
+      sp.source_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*'
+    end
+    
+    sp.subspec 'ZBJKit' do |sp|
+      sp.public_header_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*.h'
+      sp.source_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*'
+    end
   end
   
   # s.resource_bundles = {
