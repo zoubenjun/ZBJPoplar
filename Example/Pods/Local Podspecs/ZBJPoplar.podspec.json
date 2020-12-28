@@ -22,16 +22,18 @@
   "subspecs": [
     {
       "name": "Category",
+      "public_header_files": "ZBJPoplar/Classes/Category/**/*.h",
+      "source_files": "ZBJPoplar/Classes/Category/**/*",
       "subspecs": [
         {
           "name": "ZBJFoundation",
-          "public_header_files": "ZBJPoplar/Classes/Category/ZBJFoundation/*.h",
-          "source_files": "ZBJPoplar/Classes/Category/ZBJFoundation/*"
+          "public_header_files": "ZBJPoplar/Classes/Category/**/*.h",
+          "source_files": "ZBJPoplar/Classes/Category/**/*"
         },
         {
           "name": "ZBJKit",
-          "public_header_files": "ZBJPoplar/Classes/Category/ZBJKit/*.h",
-          "source_files": "ZBJPoplar/Classes/Category/ZBJKit/*"
+          "public_header_files": "ZBJPoplar/Classes/Category/**/*.h",
+          "source_files": "ZBJPoplar/Classes/Category/**/*"
         }
       ]
     }
