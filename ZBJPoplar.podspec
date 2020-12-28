@@ -36,12 +36,12 @@ Pod::Spec.new do |s|
   
   s.subspec 'ZBJFoundation' do |sp|
     sp.public_header_files = 'ZBJPoplar/Classes/ZBJFoundation/**/*.h'
-    sp.source_files = 'ZBJPoplar/Classes/NSFoundation/**/*'
+    sp.source_files = 'ZBJPoplar/Classes/ZBJFoundation/**/*'
   end
   
   s.subspec 'ZBJKit' do |sp|
     sp.public_header_files = 'ZBJPoplar/Classes/ZBJKit/**/*.h'
-    sp.source_files = 'ZBJPoplar/Classes/UIKit/**/*'
+    sp.source_files = 'ZBJPoplar/Classes/ZBJKit/**/*'
   end
   
   # s.resource_bundles = {
