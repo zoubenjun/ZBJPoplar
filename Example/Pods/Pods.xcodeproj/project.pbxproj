@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05D942BD3B84C6554233F75181C0DE09 /* 创建私有库步骤.md in Sources */ = {isa = PBXBuildFile; fileRef = 937BC4EC4157251CBCB5BCF9CF855FB5 /* 创建私有库步骤.md */; };
 		095CBCBFA88A0A8BEF3D48CD3944165E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		2E3342C53D194C45174229570EB434CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		5A0ECCE61DF98CEF57356B9112F1D50E /* Pods-ZBJPoplar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C58BED94BD597DA9BE23FB5477B3FAC8 /* Pods-ZBJPoplar_Tests-dummy.m */; };
@@ -57,7 +56,6 @@
 		68BB1CF9D3DCD5AB1DEDBE51A7EF234B /* Pods_ZBJPoplar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBJPoplar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C111C289B5CD6943B0DD4AB634DB1C9 /* Pods-ZBJPoplar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZBJPoplar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93120EF5BD0BE521336FBAE07E1C414F /* Pods-ZBJPoplar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZBJPoplar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		937BC4EC4157251CBCB5BCF9CF855FB5 /* 创建私有库步骤.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = "创建私有库步骤.md"; path = "ZBJPoplar/Classes/创建私有库步骤.md"; sourceTree = "<group>"; };
 		989E56A9D7FBA62985BE7665F4FCBDDD /* ZBJPoplar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZBJPoplar.modulemap; sourceTree = "<group>"; };
 		9A1985E328B8F45A7074573968F322D6 /* ZBJPoplar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZBJPoplar.release.xcconfig; sourceTree = "<group>"; };
 		9AB04611D14973479B015825D499C56C /* Pods-ZBJPoplar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZBJPoplar_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 		257894F797A1FBF38C24CE3BA33F36DB /* ZBJPoplar */ = {
 			isa = PBXGroup;
 			children = (
-				937BC4EC4157251CBCB5BCF9CF855FB5 /* 创建私有库步骤.md */,
 				0F0BAA5E360548C08B7FFD280EDBA5BB /* Category */,
 				8D6A5A894DAE09CC15BBBCB030598392 /* Pod */,
 				9FF70134305BDF31BD0A7AFC51205348 /* Support Files */,
@@ -437,7 +434,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCB61FB037F461EA0260F08393413FC5 /* ZBJPoplar-dummy.m in Sources */,
-				05D942BD3B84C6554233F75181C0DE09 /* 创建私有库步骤.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

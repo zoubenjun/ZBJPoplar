@@ -67,6 +67,7 @@
 		B9D868910F696CB402FB6067 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BA4F15A8ED52949CB0B8477D /* Pods_ZBJPoplar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBJPoplar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1330B625998FDB00ED0A6C /* ZBJArrayCategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBJArrayCategoryTests.m; path = Tests/ZBJArrayCategoryTests.m; sourceTree = SOURCE_ROOT; };
+		BD1330DE2599C59F00ED0A6C /* 创建私有库步骤.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "创建私有库步骤.md"; sourceTree = "<group>"; };
 		CC6E6770E1BB572D9F94C95C /* Pods-ZBJPoplar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJPoplar_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZBJPoplar_Example/Pods-ZBJPoplar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D4264FD40E58BC01B442AC53 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +140,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZBJViewController.h */,
 				6003F5A6195388D20070C39A /* ZBJViewController.m */,
+				BD1330DE2599C59F00ED0A6C /* 创建私有库步骤.md */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
