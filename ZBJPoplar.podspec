@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZBJPoplar'
-  s.version          = '0.1.2'
+  s.version          = '0.1.10'
   s.summary          = 'Personal Cagegory, Utils.'
 
 # This description is used to generate tags and improve search results.
