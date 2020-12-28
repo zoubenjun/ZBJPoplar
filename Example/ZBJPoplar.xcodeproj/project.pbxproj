@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8A979F8FE46FC610D5C5362D /* Pods_ZBJPoplar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4F15A8ED52949CB0B8477D /* Pods_ZBJPoplar_Tests.framework */; };
 		AE201A1BDA1A05FA331E6A32 /* Pods_ZBJPoplar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A710503CA102D02088A45A0 /* Pods_ZBJPoplar_Example.framework */; };
+		BD1330B725998FDB00ED0A6C /* ZBJArrayCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1330B625998FDB00ED0A6C /* ZBJArrayCategoryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +63,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85283485ED34CD8D55CED67F /* Pods-ZBJPoplar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJPoplar_Example.release.xcconfig"; path = "Target Support Files/Pods-ZBJPoplar_Example/Pods-ZBJPoplar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9597D27D4EC0A839505C8043 /* ZBJPoplar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZBJPoplar.podspec; path = ../ZBJPoplar.podspec; sourceTree = "<group>"; };
-		B9D868910F696CB402FB6067 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9597D27D4EC0A839505C8043 /* ZBJPoplar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZBJPoplar.podspec; path = ../ZBJPoplar.podspec; sourceTree = "<group>"; };
+		B9D868910F696CB402FB6067 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BA4F15A8ED52949CB0B8477D /* Pods_ZBJPoplar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBJPoplar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1330B625998FDB00ED0A6C /* ZBJArrayCategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBJArrayCategoryTests.m; path = Tests/ZBJArrayCategoryTests.m; sourceTree = SOURCE_ROOT; };
 		CC6E6770E1BB572D9F94C95C /* Pods-ZBJPoplar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBJPoplar_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZBJPoplar_Example/Pods-ZBJPoplar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D4264FD40E58BC01B442AC53 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D4264FD40E58BC01B442AC53 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
+				BD1330B625998FDB00ED0A6C /* ZBJArrayCategoryTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -193,7 +196,6 @@
 				64B92FC9A8698175F602457A /* Pods-ZBJPoplar_Tests.debug.xcconfig */,
 				3C6D2CA3DBFEC4F94D97611C /* Pods-ZBJPoplar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1330B725998FDB00ED0A6C /* ZBJArrayCategoryTests.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

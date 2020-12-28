@@ -1,5 +1,5 @@
 PODS:
-  - ZBJPoplar (0.1.0)
+  - ZBJPoplar (0.1.2)
 
 DEPENDENCIES:
   - ZBJPoplar (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZBJPoplar: 5809f66894abf84eed6cc25190a70a7c8354f0fd
+  ZBJPoplar: e8546e097f988a5db99e0eb9f981936e22025d01
 
 PODFILE CHECKSUM: e9adeebdcd8db06639674b7d0532bd762ee56e61
 
