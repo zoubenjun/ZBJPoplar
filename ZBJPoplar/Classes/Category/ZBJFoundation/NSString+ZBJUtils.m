@@ -206,7 +206,7 @@
 }
 
 - (CGSize)zbj_sizeWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode maxWidth:(CGFloat)maxWidth {
-    return [self zbj_sizeWithFont:font size:CGSizeMake(maxWidth, MAXFLOAT) alignment:(NSTextAlignmentLeft) linebreakMode:lineBreakMode lineSpace:0];
+    return [self zbj_sizeWithFont:font size:CGSizeMake(maxWidth, MAXFLOAT) alignment:(NSTextAlignmentLeft) linebreakMode:lineBreakMode lineSpace:0 maxLinesNum:NSIntegerMax];
 }
 
 - (CGFloat)zbj_heightWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode maxWidth:(CGFloat)maxWidth {
@@ -214,10 +214,10 @@
 }
 
 - (CGFloat)zbj_widthWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode maxHeight:(CGFloat)maxHeight {
-    return [self zbj_sizeWithFont:font size:CGSizeMake(MAXFLOAT, maxHeight) alignment:(NSTextAlignmentLeft) linebreakMode:lineBreakMode lineSpace:0].width;
+    return [self zbj_sizeWithFont:font size:CGSizeMake(MAXFLOAT, maxHeight) alignment:(NSTextAlignmentLeft) linebreakMode:lineBreakMode lineSpace:0 maxLinesNum:NSIntegerMax].width;
 }
 
-- (CGSize)zbj_sizeWithFont:(UIFont*)font size:(CGSize)size alignment:(NSTextAlignment)alignment linebreakMode:(NSLineBreakMode)linebreakMode lineSpace:(CGFloat)lineSpace {
+- (CGSize)zbj_sizeWithFont:(UIFont*)font size:(CGSize)size alignment:(NSTextAlignment)alignment linebreakMode:(NSLineBreakMode)linebreakMode lineSpace:(CGFloat)lineSpace maxLinesNum:(NSInteger)maxLinesNum {
     if (self.length == 0) {
         return CGSizeZero;
     }
@@ -228,7 +228,13 @@
         paragraphStyle.lineSpacing = lineSpace;
     }
     NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
+    CGSize s = [self zbj_sizeWithAttributes:attributes maxSize:size];
+    CGFloat maxHeight = MAXFLOAT;
+    if (maxLinesNum >= 1 && maxLinesNum != NSIntegerMax) {
+        maxHeight = maxLinesNum * font.lineHeight + (maxLinesNum - 1) * lineSpace;
+    }
     
-    return [self zbj_sizeWithAttributes:attributes maxSize:size];
+    return CGSizeMake(s.width, MIN(s.height, maxHeight));
 }
+
 @end

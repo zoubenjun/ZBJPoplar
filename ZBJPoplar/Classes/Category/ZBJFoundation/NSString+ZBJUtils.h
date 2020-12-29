@@ -70,7 +70,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param alignment 对齐方式
 /// @param linebreakMode NSLineBreakMode
 /// @param lineSpace 行间距
-- (CGSize)zbj_sizeWithFont:(UIFont*)font size:(CGSize)size alignment:(NSTextAlignment)alignment linebreakMode:(NSLineBreakMode)linebreakMode lineSpace:(CGFloat)lineSpace;
+/// @param maxLinesNum 最多几行
+- (CGSize)zbj_sizeWithFont:(UIFont*)font size:(CGSize)size alignment:(NSTextAlignment)alignment linebreakMode:(NSLineBreakMode)linebreakMode lineSpace:(CGFloat)lineSpace maxLinesNum:(NSInteger)maxLinesNum;
 @end
 
 NS_ASSUME_NONNULL_END

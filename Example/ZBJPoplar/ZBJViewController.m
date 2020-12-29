@@ -8,6 +8,7 @@
 
 #import "ZBJViewController.h"
 #import "NSArray+ZBJUtils.h"
+#import "UIColor+ZBJUitls.h"
 
 @interface ZBJViewController ()
 
@@ -24,10 +25,10 @@
     [arr zbj_map:^id _Nullable(id  _Nullable obj) {
         return [NSString stringWithFormat:@"zbj_%@",obj];
     }];
-//    [arr zbj_each:^(NSInteger index, id  _Nullable obj) {
-//        NSLog(@"index:%ld, obj:%@", index, obj);
-//    }];
-//    NSLog(@"%@",[arr zbj_flatten]);
+    
+    UIColor *color = [UIColor zbj_colorWithHexString:@"FF00FF"];
+    NSLog(@"%@", color);
+    
 }
 
 - (void)didReceiveMemoryWarning
