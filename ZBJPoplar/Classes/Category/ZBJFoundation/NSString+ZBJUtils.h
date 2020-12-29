@@ -42,13 +42,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// 汉字转拼音
 - (NSString *)zbj_pinyin;
 /// 计算字符串size
-/// @param font 字体
-/// @param maxSize 最大宽度
-- (CGSize)zbj_sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
+/// @param attributes attributes
+/// @param maxSize 最大宽高
+- (CGSize)zbj_sizeWithAttributes:(NSDictionary *)attributes maxSize:(CGSize)maxSize;
 /// 计算字符串size
-/// @param attrs attributes
-/// @param maxSize 最大宽度
-- (CGSize)zbj_sizeWithAttributes:(NSDictionary *)attrs maxSize:(CGSize)maxSize;
+/// @param font 字体
+/// @param maxSize 最大宽高
+- (CGSize)zbj_sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
 /// 计算字符串size
 /// @param font 字体
 /// @param lineBreakMode NSLineBreakMode
@@ -59,6 +59,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param lineBreakMode NSLineBreakMode
 /// @param maxWidth 最大宽度
 - (CGFloat)zbj_heightWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode maxWidth:(CGFloat)maxWidth;
+/// 计算字符串宽度
+/// @param font 字体
+/// @param lineBreakMode NSLineBreakMode
+/// @param maxHeight 最大高度
+- (CGFloat)zbj_widthWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode maxHeight:(CGFloat)maxHeight;
+/// 计算字符串size
+/// @param font 字体
+/// @param size 最大宽高
+/// @param alignment 对齐方式
+/// @param linebreakMode NSLineBreakMode
+/// @param lineSpace 行间距
+- (CGSize)zbj_sizeWithFont:(UIFont*)font size:(CGSize)size alignment:(NSTextAlignment)alignment linebreakMode:(NSLineBreakMode)linebreakMode lineSpace:(CGFloat)lineSpace;
 @end
 
 NS_ASSUME_NONNULL_END

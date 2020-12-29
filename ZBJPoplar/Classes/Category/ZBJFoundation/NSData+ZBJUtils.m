@@ -12,7 +12,8 @@
 
 - (NSString*)zbj_md5 {
     unsigned char result[CC_MD5_DIGEST_LENGTH];
-    CC_MD5( self.bytes, (int)self.length, result );
+    CC_MD5(self.bytes, (int)self.length, result);
+    
     return [NSString stringWithFormat:
             @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
             result[0], result[1], result[2], result[3],

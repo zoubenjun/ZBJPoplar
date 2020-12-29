@@ -27,6 +27,7 @@
             [ret addObject:result];
         }
     }
+    
     return ret;
 }
 
@@ -37,11 +38,13 @@
             return obj;
         }
     }
+    
     return nil;
 }
 
 - (NSArray *)zbj_matchAll:(ZBJValidationBlock)block {
     NSParameterAssert(block != nil);
+    
     return [self objectsAtIndexes:[self indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
         return block(obj);
     }]];
@@ -53,6 +56,7 @@
     for (id obj in self) {
         result = block(result, obj);
     }
+    
     return result;
 }
 
@@ -63,6 +67,7 @@
             return NO;
         }
     }
+    
     return YES;
 }
 
@@ -73,6 +78,7 @@
             return YES;
         }
     }
+    
     return NO;
 }
 
@@ -84,6 +90,7 @@
         }
         [string appendString:obj];
     }];
+    
     return string;
 }
 
@@ -96,6 +103,7 @@
         }
         [dic[key] addObject:obj];
     }
+    
     return [dic allValues];
 }
 
@@ -108,6 +116,7 @@
             [array addObject:[self subarrayWithRange:NSMakeRange(i, self.count - i)]];
         }
     }
+    
     return [array copy];
 }
 
@@ -121,6 +130,7 @@
             [array addObject:obj];
         }
     }
+    
     return [array copy];
 }
 

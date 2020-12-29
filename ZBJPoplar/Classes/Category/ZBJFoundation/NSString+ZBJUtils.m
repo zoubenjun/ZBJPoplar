@@ -14,6 +14,7 @@
     NSRange range;
     range.location = begin;
     range.length = end - begin;
+    
     return [self substringWithRange:range];
 }
 
@@ -22,21 +23,25 @@
         NSRange range = [self rangeOfString:subString];
         return  [self stringByReplacingCharactersInRange:range withString:@""];
     }
+    
     return self;
 }
 
 - (BOOL)zbj_onlyLetters {
     NSCharacterSet *letterCharacterset = [[NSCharacterSet letterCharacterSet] invertedSet];
+    
     return ([self rangeOfCharacterFromSet:letterCharacterset].location == NSNotFound);
 }
 
 - (BOOL)zbj_onlyNumbers {
     NSCharacterSet *numbersCharacterSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet];
+    
     return ([self rangeOfCharacterFromSet:numbersCharacterSet].location == NSNotFound);
 }
 
 - (BOOL)zbj_onlyNumbersAndLetters {
     NSCharacterSet *numAndLetterCharSet = [[NSCharacterSet alphanumericCharacterSet] invertedSet];
+    
     return ([self rangeOfCharacterFromSet:numAndLetterCharSet].location == NSNotFound);
 }
 
@@ -51,6 +56,7 @@
     @"-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])";
     
     NSPredicate *regExPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegEx];
+    
     return [regExPredicate evaluateWithObject:self];
 }
 
@@ -59,12 +65,14 @@
     if(url) {
         return YES;
     }
+    
     return NO;
 }
 
 - (BOOL)zbj_isValidatedChineseIDFormart {
     NSString *nullRegex = @"^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}([\\d|x|X]{1})$";
     NSPredicate *nullPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",nullRegex];
+    
     return [nullPredicate evaluateWithObject:self];
 }
 - (BOOL)zbj_isValidatedChineseIDArea {
@@ -129,12 +137,12 @@
     if (![self zbj_isValidatedChineseIDCode]) {
         return NO;
     }
-        
+    
     return YES;
 }
 
 - (NSString *)zbj_urlEncode {
-//    NSCharacterSet *URLCombinedCharacterSet = [[NSCharacterSet characterSetWithCharactersInString:@" \"#%/:<>?@[\\]^`{|}"] invertedSet];
+    //    NSCharacterSet *URLCombinedCharacterSet = [[NSCharacterSet characterSetWithCharactersInString:@" \"#%/:<>?@[\\]^`{|}"] invertedSet];
     return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
 }
 
@@ -145,19 +153,22 @@
 - (NSString *)zbj_base64UrlEncode {
     NSData *encodeData = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSString *base64String = [encodeData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    
     return base64String;
 }
 
 - (NSString *)zbj_base64UrlDecode {
     NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
     NSString *decodedString = [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
+    
     return decodedString;
 }
 
 - (NSString *)zbj_md5 {
     const char *cStr = [self UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
-    CC_MD5( cStr, (int)strlen(cStr), result );
+    CC_MD5(cStr, (int)strlen(cStr), result);
+    
     return [NSString stringWithFormat:
             @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
             result[0], result[1], result[2], result[3],
@@ -176,36 +187,48 @@
     CFStringTransform((CFMutableStringRef)result,NULL, kCFStringTransformMandarinLatin,NO);
     //再转换为不带声调的拼音
     CFStringTransform((CFMutableStringRef)result,NULL, kCFStringTransformStripDiacritics,NO);
+    
     return [result uppercaseString];
 }
 
-- (CGSize)zbj_sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize {
-    NSDictionary *attrs = @{NSFontAttributeName : font};
-    return [self boundingRectWithSize:maxSize
-                              options:NSStringDrawingUsesLineFragmentOrigin
-                           attributes:attrs
-                              context:nil].size;
+- (CGSize)zbj_sizeWithAttributes:(NSDictionary *)attributes maxSize:(CGSize)maxSize {
+    CGSize newSize = [self boundingRectWithSize:maxSize
+                                        options:NSStringDrawingUsesLineFragmentOrigin
+                                     attributes:attributes
+                                        context:nil].size;
+    
+    return CGSizeMake(ceil(newSize.width), ceil(newSize.height));
 }
 
-- (CGSize)zbj_sizeWithAttributes:(NSDictionary *)attrs maxSize:(CGSize)maxSize {
-    return [self boundingRectWithSize:maxSize
-                              options:NSStringDrawingUsesLineFragmentOrigin
-                           attributes:attrs
-                              context:nil].size;
+- (CGSize)zbj_sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize {
+    NSDictionary *attributes = @{NSFontAttributeName:font};
+    return [self zbj_sizeWithAttributes:attributes maxSize:maxSize];
 }
 
 - (CGSize)zbj_sizeWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode maxWidth:(CGFloat)maxWidth {
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.lineBreakMode = lineBreakMode;
-    NSDictionary *attributes = @{
-        NSFontAttributeName : font,
-        NSParagraphStyleAttributeName : paragraphStyle
-    };
-    return [self zbj_sizeWithAttributes:attributes maxSize:CGSizeMake(maxWidth, MAXFLOAT)];
+    return [self zbj_sizeWithFont:font size:CGSizeMake(maxWidth, MAXFLOAT) alignment:(NSTextAlignmentLeft) linebreakMode:lineBreakMode lineSpace:0];
 }
 
 - (CGFloat)zbj_heightWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode maxWidth:(CGFloat)maxWidth {
     return [self zbj_sizeWithFont:font lineBreakMode:lineBreakMode maxWidth:maxWidth].height;
 }
 
+- (CGFloat)zbj_widthWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode maxHeight:(CGFloat)maxHeight {
+    return [self zbj_sizeWithFont:font size:CGSizeMake(MAXFLOAT, maxHeight) alignment:(NSTextAlignmentLeft) linebreakMode:lineBreakMode lineSpace:0].width;
+}
+
+- (CGSize)zbj_sizeWithFont:(UIFont*)font size:(CGSize)size alignment:(NSTextAlignment)alignment linebreakMode:(NSLineBreakMode)linebreakMode lineSpace:(CGFloat)lineSpace {
+    if (self.length == 0) {
+        return CGSizeZero;
+    }
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineBreakMode = linebreakMode;
+    paragraphStyle.alignment = alignment;
+    if (lineSpace > 0) {
+        paragraphStyle.lineSpacing = lineSpace;
+    }
+    NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
+    
+    return [self zbj_sizeWithAttributes:attributes maxSize:size];
+}
 @end

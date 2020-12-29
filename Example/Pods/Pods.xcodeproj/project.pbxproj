@@ -7,35 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042DD8D2DAF105E13295D956DC266B97 /* ZBJPoplar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CEE9A397FFAEA23FF16D2B84178E31C /* ZBJPoplar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B0652DBBD3ABECEA2C1C99148E140A6 /* NSArray+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D34DE35B119C46E8164A04F91AF32E /* NSArray+ZBJUtils.m */; };
+		00C120A6880923C4A7AFDBB127E05EAA /* UIControl+ZBJBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = CA869F7AC95B3B206DEF88ECE615CFFE /* UIControl+ZBJBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25950F05175DB3DE66EFCAB6BAC0D7F8 /* ZBJPoplar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA1B2B0D24EF3469044DF18D041269 /* ZBJPoplar-dummy.m */; };
 		2E3342C53D194C45174229570EB434CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		397D60DB87092361458FBA9D85EA6960 /* NSArray+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 02DFD988445C8131AFB1A6F5689725C9 /* NSArray+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A5B0FC80589499D444B9F59DCE4627B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		4EF58B81A4CF832F830B4D4EFBAC9F5E /* UIControl+ZBJBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F1690F33FB24F738CC3554C12A6515 /* UIControl+ZBJBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F80C32A17B11286A7C216FB86913F45 /* NSString+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D15DCA3F482377A397571B17F50CD208 /* NSString+ZBJUtils.m */; };
-		585541421F0AB2F2A8D9236C27541EA4 /* NSData+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF471DCA46A29ECCF115D80898E0450 /* NSData+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		582C9A936265DA39F469A008E9FE9517 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		5A0ECCE61DF98CEF57356B9112F1D50E /* Pods-ZBJPoplar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C58BED94BD597DA9BE23FB5477B3FAC8 /* Pods-ZBJPoplar_Tests-dummy.m */; };
+		5AD25E6172FC9A5FC0AE927F13E1749C /* ZBJPoplar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACC1D3B957A7A04B948CC87E77FEA05 /* ZBJPoplar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C2E6CD557CDA5D4F5D4A631300AC973 /* NSArray+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A300A22A80A76A33D99236304904D61B /* NSArray+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		723A82F3CDBFCC8622910A81858AA90B /* Pods-ZBJPoplar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 105F600A3FCF7E96FF95728A2A7A2E12 /* Pods-ZBJPoplar_Example-dummy.m */; };
-		832042970427186CA2CBCCBA615504EA /* ZBJPoplar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B75E70D6F3A2E5ED310562338455F689 /* ZBJPoplar-dummy.m */; };
+		7DF1BC8CB7EA124E175F5B06D8BDE78C /* NSString+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA802103A59EF0957C65ACEBB43FD7F /* NSString+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BB49FAD349E92B2E27DDE82F6E46238 /* Pods-ZBJPoplar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E66A2F0C83F3037D384DBA739CE6D33C /* Pods-ZBJPoplar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94373473F3F8E840A73FE023E593F56C /* ZBJWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D2B971594E9D7C167A1B1BECE55E /* ZBJWeakTimer.m */; };
+		95C7B724AE410FDCCAE3FC5D6B1B8258 /* UIControl+ZBJBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 204B354B5C1944A2FE4C2F19E46F488D /* UIControl+ZBJBlock.m */; };
+		99986CD4141ED54ACBAA109980005423 /* NSData+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 68209E11112DF029933CED75A8C0523A /* NSData+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B070C518D9AFC6AE31D0732EBADB96E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		B07114175A576AC95C888A509B2DA5ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		BE466F0D6D59331EA1541F5E4377A0E8 /* Pods-ZBJPoplar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF278684AD20D594788BD2664C79D2F /* Pods-ZBJPoplar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAA782D9350381894F617A893A4AC9FE /* NSString+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F19414AFD2650CF83359D4078825C9E /* NSString+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E79F015A3114C9A0B656E0D50E4AAE1A /* UIControl+ZBJBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 57512822CDF883C35230F1D3657EBDC4 /* UIControl+ZBJBlock.m */; };
-		E90F8A52490A650D4A01DB46B3723EF6 /* NSData+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B29194193DBFD69CCAA4C7D69FE1C72 /* NSData+ZBJUtils.m */; };
-		EC624AD0698120887F0AD08788C07596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		C2D9C2B1F50225B6E9FE55728E947284 /* NSData+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB50713221EF154EEB2DA03DF7D55D0 /* NSData+ZBJUtils.m */; };
+		C7B93E03589DE928D14DF10C92B1A412 /* NSArray+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3015998CDC685556472070BD103E5 /* NSArray+ZBJUtils.m */; };
+		E9C3571556235A53F3C71C20F40432FC /* ZBJWeakTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B2F7C4BE8D8030644D0ABF3914DDAC43 /* ZBJWeakTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56CCD525AFF0350844B42DB3D584589 /* NSString+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA670128B84F020CAFF524CB51E578E /* NSString+ZBJUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04C956A8647A7B16D111CD78C23F0AB7 /* PBXContainerItemProxy */ = {
+		1DB60CC24B3C4D217ECAFCD2820CB1BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6067AF80612016564B37048F3A857471;
 			remoteInfo = "Pods-ZBJPoplar_Example";
 		};
-		93935F8C12572FBEFDCC80E920F46CE3 /* PBXContainerItemProxy */ = {
+		DB14EFE89CA3F9BD3BA8E20E4E60882F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -45,56 +47,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02DFD988445C8131AFB1A6F5689725C9 /* NSArray+ZBJUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZBJUtils.h"; sourceTree = "<group>"; };
+		0CB50713221EF154EEB2DA03DF7D55D0 /* NSData+ZBJUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ZBJUtils.m"; path = "ZBJPoplar/Classes/Category/ZBJFoundation/NSData+ZBJUtils.m"; sourceTree = "<group>"; };
 		105F600A3FCF7E96FF95728A2A7A2E12 /* Pods-ZBJPoplar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZBJPoplar_Example-dummy.m"; sourceTree = "<group>"; };
+		151F7DE1BED200C07D097D1900E6EBCF /* ZBJPoplar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZBJPoplar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1A8D714CCFB7D9C9A17E0226B1E45C34 /* Pods-ZBJPoplar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZBJPoplar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2F19414AFD2650CF83359D4078825C9E /* NSString+ZBJUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+ZBJUtils.h"; sourceTree = "<group>"; };
+		204B354B5C1944A2FE4C2F19E46F488D /* UIControl+ZBJBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ZBJBlock.m"; path = "ZBJPoplar/Classes/Category/ZBJKit/UIControl+ZBJBlock.m"; sourceTree = "<group>"; };
 		328E9B11077DE939755B4A3448CD6D42 /* Pods-ZBJPoplar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZBJPoplar_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3CEE9A397FFAEA23FF16D2B84178E31C /* ZBJPoplar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZBJPoplar-umbrella.h"; sourceTree = "<group>"; };
+		39191E61966899396C6BE751FE9989AE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		39C8F4DE656638509F2FF2F2ED4C874F /* ZBJPoplar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZBJPoplar.debug.xcconfig; sourceTree = "<group>"; };
+		4049748D955396E171FF315E581D28B9 /* ZBJPoplar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZBJPoplar.release.xcconfig; sourceTree = "<group>"; };
 		4238CC44F3A517683A9D378CCB808779 /* ZBJPoplar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZBJPoplar.framework; path = ZBJPoplar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57512822CDF883C35230F1D3657EBDC4 /* UIControl+ZBJBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ZBJBlock.m"; sourceTree = "<group>"; };
-		5D4AD64B0D126A91ED7E726D4EDFFCC2 /* ZBJPoplar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZBJPoplar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		58F0060C76BBBB14B1740537C3E7FBDC /* ZBJPoplar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZBJPoplar.modulemap; sourceTree = "<group>"; };
+		5CA3015998CDC685556472070BD103E5 /* NSArray+ZBJUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ZBJUtils.m"; path = "ZBJPoplar/Classes/Category/ZBJFoundation/NSArray+ZBJUtils.m"; sourceTree = "<group>"; };
 		63A6D0D329A2411B40EDB7B99207DD4C /* Pods_ZBJPoplar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZBJPoplar_Example.framework; path = "Pods-ZBJPoplar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68209E11112DF029933CED75A8C0523A /* NSData+ZBJUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ZBJUtils.h"; path = "ZBJPoplar/Classes/Category/ZBJFoundation/NSData+ZBJUtils.h"; sourceTree = "<group>"; };
 		68BB1CF9D3DCD5AB1DEDBE51A7EF234B /* Pods_ZBJPoplar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZBJPoplar_Tests.framework; path = "Pods-ZBJPoplar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BF471DCA46A29ECCF115D80898E0450 /* NSData+ZBJUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+ZBJUtils.h"; sourceTree = "<group>"; };
-		7B29194193DBFD69CCAA4C7D69FE1C72 /* NSData+ZBJUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZBJUtils.m"; sourceTree = "<group>"; };
+		701A0B0D8EBB5F3F429A02C951F13FD1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		7C111C289B5CD6943B0DD4AB634DB1C9 /* Pods-ZBJPoplar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZBJPoplar_Example-frameworks.sh"; sourceTree = "<group>"; };
-		83E7F16EB369B7CB46C6022A378364FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		863A3BA91D1586EA83A197D412191FAF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		88A5D2B971594E9D7C167A1B1BECE55E /* ZBJWeakTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZBJWeakTimer.m; path = ZBJPoplar/Classes/Tools/ZBJWeakTimer.m; sourceTree = "<group>"; };
 		93120EF5BD0BE521336FBAE07E1C414F /* Pods-ZBJPoplar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZBJPoplar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		97D34DE35B119C46E8164A04F91AF32E /* NSArray+ZBJUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZBJUtils.m"; sourceTree = "<group>"; };
 		9AB04611D14973479B015825D499C56C /* Pods-ZBJPoplar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZBJPoplar_Tests-Info.plist"; sourceTree = "<group>"; };
+		9ACC1D3B957A7A04B948CC87E77FEA05 /* ZBJPoplar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZBJPoplar-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AD39C661F6EE116176FBE63396D6F23D /* ZBJPoplar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZBJPoplar-Info.plist"; sourceTree = "<group>"; };
-		B72BA1494C4A52171522DD48A82338B4 /* ZBJPoplar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZBJPoplar.modulemap; sourceTree = "<group>"; };
-		B75E70D6F3A2E5ED310562338455F689 /* ZBJPoplar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZBJPoplar-dummy.m"; sourceTree = "<group>"; };
+		A300A22A80A76A33D99236304904D61B /* NSArray+ZBJUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+ZBJUtils.h"; path = "ZBJPoplar/Classes/Category/ZBJFoundation/NSArray+ZBJUtils.h"; sourceTree = "<group>"; };
+		ABA670128B84F020CAFF524CB51E578E /* NSString+ZBJUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ZBJUtils.m"; path = "ZBJPoplar/Classes/Category/ZBJFoundation/NSString+ZBJUtils.m"; sourceTree = "<group>"; };
+		B2F7C4BE8D8030644D0ABF3914DDAC43 /* ZBJWeakTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZBJWeakTimer.h; path = ZBJPoplar/Classes/Tools/ZBJWeakTimer.h; sourceTree = "<group>"; };
+		BAA802103A59EF0957C65ACEBB43FD7F /* NSString+ZBJUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ZBJUtils.h"; path = "ZBJPoplar/Classes/Category/ZBJFoundation/NSString+ZBJUtils.h"; sourceTree = "<group>"; };
 		BC239A7B042AD70CE054A7A28AB23C75 /* Pods-ZBJPoplar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZBJPoplar_Example.modulemap"; sourceTree = "<group>"; };
 		C3511270D311DF612B360808A1DB9ACA /* Pods-ZBJPoplar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZBJPoplar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C58BED94BD597DA9BE23FB5477B3FAC8 /* Pods-ZBJPoplar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZBJPoplar_Tests-dummy.m"; sourceTree = "<group>"; };
-		D14A4840CA4E86484D2E50C03D9E0AA1 /* ZBJPoplar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZBJPoplar.release.xcconfig; sourceTree = "<group>"; };
-		D15DCA3F482377A397571B17F50CD208 /* NSString+ZBJUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZBJUtils.m"; sourceTree = "<group>"; };
+		CA869F7AC95B3B206DEF88ECE615CFFE /* UIControl+ZBJBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+ZBJBlock.h"; path = "ZBJPoplar/Classes/Category/ZBJKit/UIControl+ZBJBlock.h"; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D9AA1B2B0D24EF3469044DF18D041269 /* ZBJPoplar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZBJPoplar-dummy.m"; sourceTree = "<group>"; };
 		DB198B4549184D15079762C0EB9805E9 /* Pods-ZBJPoplar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZBJPoplar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCB32F5714311A6CF429D733BBD18306 /* Pods-ZBJPoplar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZBJPoplar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DCF278684AD20D594788BD2664C79D2F /* Pods-ZBJPoplar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZBJPoplar_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E2CF8915DE224BCBBDAF06FF4FEAD14D /* Pods-ZBJPoplar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZBJPoplar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E4F1690F33FB24F738CC3554C12A6515 /* UIControl+ZBJBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIControl+ZBJBlock.h"; sourceTree = "<group>"; };
-		E5E485DFD706A0810DFEB02A5BDA5714 /* ZBJPoplar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZBJPoplar-prefix.pch"; sourceTree = "<group>"; };
 		E66A2F0C83F3037D384DBA739CE6D33C /* Pods-ZBJPoplar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZBJPoplar_Example-umbrella.h"; sourceTree = "<group>"; };
-		E9EB66CAC1D1B07A34F6E2F20B7CA2F4 /* ZBJPoplar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZBJPoplar.debug.xcconfig; sourceTree = "<group>"; };
+		E8BA7871E9918D26950F6815481C48DD /* ZBJPoplar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZBJPoplar-prefix.pch"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EB5D1A611D5AD749A0C00B7B4AEA41A0 /* Pods-ZBJPoplar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZBJPoplar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F1B73755E70C903FD99FCB47E1AE7938 /* Pods-ZBJPoplar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZBJPoplar_Example-Info.plist"; sourceTree = "<group>"; };
 		F2CE4A88B26CAC6F8D7771F71473D4E9 /* Pods-ZBJPoplar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZBJPoplar_Tests.modulemap"; sourceTree = "<group>"; };
+		F9ECB86A073BBE2B5CD612D06C2BF0E7 /* ZBJPoplar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZBJPoplar-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0CDDE6E0369343C47A67EE306671A845 /* Frameworks */ = {
+		0D54AD001FF87BF8DF804C8A93745A71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC624AD0698120887F0AD08788C07596 /* Foundation.framework in Frameworks */,
-				4A5B0FC80589499D444B9F59DCE4627B /* UIKit.framework in Frameworks */,
+				B070C518D9AFC6AE31D0732EBADB96E3 /* Foundation.framework in Frameworks */,
+				582C9A936265DA39F469A008E9FE9517 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,27 +129,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1EE4078975CDA9A41453206585950BAA /* ZBJKit */ = {
-			isa = PBXGroup;
-			children = (
-				E4F1690F33FB24F738CC3554C12A6515 /* UIControl+ZBJBlock.h */,
-				57512822CDF883C35230F1D3657EBDC4 /* UIControl+ZBJBlock.m */,
-			);
-			name = ZBJKit;
-			path = ZBJPoplar/Classes/Category/ZBJKit;
-			sourceTree = "<group>";
-		};
-		1F8E25821BF029BD373A81A582D56B30 /* ZBJPoplar */ = {
-			isa = PBXGroup;
-			children = (
-				EE57B83AE98730D382564408371D62C3 /* Category */,
-				2AE54550B9F584A8BD9FEDAF59C4B8C5 /* Pod */,
-				E9A3042E6E36D2D29F12CD382CAC8707 /* Support Files */,
-			);
-			name = ZBJPoplar;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		2371A5775F4A507CCC14FDB0D40F1EB4 /* Pods-ZBJPoplar_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,22 +145,24 @@
 			path = "Target Support Files/Pods-ZBJPoplar_Tests";
 			sourceTree = "<group>";
 		};
-		2AE54550B9F584A8BD9FEDAF59C4B8C5 /* Pod */ = {
+		283BAECE6EA1D26D40BF9B12D438F683 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				863A3BA91D1586EA83A197D412191FAF /* LICENSE */,
-				83E7F16EB369B7CB46C6022A378364FE /* README.md */,
-				5D4AD64B0D126A91ED7E726D4EDFFCC2 /* ZBJPoplar.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		2BA3F0B6B27D7A3AE46AF2CF527AE379 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1F8E25821BF029BD373A81A582D56B30 /* ZBJPoplar */,
+				53F897CDBFBB3B2DCC6CD428375D0C71 /* ZBJPoplar */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		53F897CDBFBB3B2DCC6CD428375D0C71 /* ZBJPoplar */ = {
+			isa = PBXGroup;
+			children = (
+				94363AA165205459BE8A2CFCB4024B4A /* Category */,
+				D9F40B12DF69E76D942A58AC22FD8D00 /* Pod */,
+				D7CF3C98120CBB9A3FFA968BB4931BF2 /* Support Files */,
+				A66945D6B0EBE3113977F4532AACD48E /* Tools */,
+			);
+			name = ZBJPoplar;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		56EA7C6059971BBDCDF9F31CE01F506B /* Targets Support Files */ = {
@@ -198,6 +183,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		77356380F7B362D292861507B88E5C93 /* ZBJFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A300A22A80A76A33D99236304904D61B /* NSArray+ZBJUtils.h */,
+				5CA3015998CDC685556472070BD103E5 /* NSArray+ZBJUtils.m */,
+				68209E11112DF029933CED75A8C0523A /* NSData+ZBJUtils.h */,
+				0CB50713221EF154EEB2DA03DF7D55D0 /* NSData+ZBJUtils.m */,
+				BAA802103A59EF0957C65ACEBB43FD7F /* NSString+ZBJUtils.h */,
+				ABA670128B84F020CAFF524CB51E578E /* NSString+ZBJUtils.m */,
+			);
+			name = ZBJFoundation;
+			sourceTree = "<group>";
+		};
 		7B8F1FBD131DB6D02FC285809D5810CC /* Pods-ZBJPoplar_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,25 +213,38 @@
 			path = "Target Support Files/Pods-ZBJPoplar_Example";
 			sourceTree = "<group>";
 		};
-		B1BCAD6852ED8AB9CC62C6EABDCBB048 /* ZBJFoundation */ = {
+		94363AA165205459BE8A2CFCB4024B4A /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				02DFD988445C8131AFB1A6F5689725C9 /* NSArray+ZBJUtils.h */,
-				97D34DE35B119C46E8164A04F91AF32E /* NSArray+ZBJUtils.m */,
-				6BF471DCA46A29ECCF115D80898E0450 /* NSData+ZBJUtils.h */,
-				7B29194193DBFD69CCAA4C7D69FE1C72 /* NSData+ZBJUtils.m */,
-				2F19414AFD2650CF83359D4078825C9E /* NSString+ZBJUtils.h */,
-				D15DCA3F482377A397571B17F50CD208 /* NSString+ZBJUtils.m */,
+				77356380F7B362D292861507B88E5C93 /* ZBJFoundation */,
+				9C3FC50E0DAB134BF1C8170C98A426E4 /* ZBJKit */,
 			);
-			name = ZBJFoundation;
-			path = ZBJPoplar/Classes/Category/ZBJFoundation;
+			name = Category;
+			sourceTree = "<group>";
+		};
+		9C3FC50E0DAB134BF1C8170C98A426E4 /* ZBJKit */ = {
+			isa = PBXGroup;
+			children = (
+				CA869F7AC95B3B206DEF88ECE615CFFE /* UIControl+ZBJBlock.h */,
+				204B354B5C1944A2FE4C2F19E46F488D /* UIControl+ZBJBlock.m */,
+			);
+			name = ZBJKit;
+			sourceTree = "<group>";
+		};
+		A66945D6B0EBE3113977F4532AACD48E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B2F7C4BE8D8030644D0ABF3914DDAC43 /* ZBJWeakTimer.h */,
+				88A5D2B971594E9D7C167A1B1BECE55E /* ZBJWeakTimer.m */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2BA3F0B6B27D7A3AE46AF2CF527AE379 /* Development Pods */,
+				283BAECE6EA1D26D40BF9B12D438F683 /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				D4F898391C22B2E7A6D0C1D892954389 /* Products */,
 				56EA7C6059971BBDCDF9F31CE01F506B /* Targets Support Files */,
@@ -250,50 +261,52 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9A3042E6E36D2D29F12CD382CAC8707 /* Support Files */ = {
+		D7CF3C98120CBB9A3FFA968BB4931BF2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B72BA1494C4A52171522DD48A82338B4 /* ZBJPoplar.modulemap */,
-				B75E70D6F3A2E5ED310562338455F689 /* ZBJPoplar-dummy.m */,
-				AD39C661F6EE116176FBE63396D6F23D /* ZBJPoplar-Info.plist */,
-				E5E485DFD706A0810DFEB02A5BDA5714 /* ZBJPoplar-prefix.pch */,
-				3CEE9A397FFAEA23FF16D2B84178E31C /* ZBJPoplar-umbrella.h */,
-				E9EB66CAC1D1B07A34F6E2F20B7CA2F4 /* ZBJPoplar.debug.xcconfig */,
-				D14A4840CA4E86484D2E50C03D9E0AA1 /* ZBJPoplar.release.xcconfig */,
+				58F0060C76BBBB14B1740537C3E7FBDC /* ZBJPoplar.modulemap */,
+				D9AA1B2B0D24EF3469044DF18D041269 /* ZBJPoplar-dummy.m */,
+				F9ECB86A073BBE2B5CD612D06C2BF0E7 /* ZBJPoplar-Info.plist */,
+				E8BA7871E9918D26950F6815481C48DD /* ZBJPoplar-prefix.pch */,
+				9ACC1D3B957A7A04B948CC87E77FEA05 /* ZBJPoplar-umbrella.h */,
+				39C8F4DE656638509F2FF2F2ED4C874F /* ZBJPoplar.debug.xcconfig */,
+				4049748D955396E171FF315E581D28B9 /* ZBJPoplar.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ZBJPoplar";
 			sourceTree = "<group>";
 		};
-		EE57B83AE98730D382564408371D62C3 /* Category */ = {
+		D9F40B12DF69E76D942A58AC22FD8D00 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				B1BCAD6852ED8AB9CC62C6EABDCBB048 /* ZBJFoundation */,
-				1EE4078975CDA9A41453206585950BAA /* ZBJKit */,
+				39191E61966899396C6BE751FE9989AE /* LICENSE */,
+				701A0B0D8EBB5F3F429A02C951F13FD1 /* README.md */,
+				151F7DE1BED200C07D097D1900E6EBCF /* ZBJPoplar.podspec */,
 			);
-			name = Category;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		043A9BCCC6118DF1CE568796E32CE86D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				397D60DB87092361458FBA9D85EA6960 /* NSArray+ZBJUtils.h in Headers */,
-				585541421F0AB2F2A8D9236C27541EA4 /* NSData+ZBJUtils.h in Headers */,
-				DAA782D9350381894F617A893A4AC9FE /* NSString+ZBJUtils.h in Headers */,
-				4EF58B81A4CF832F830B4D4EFBAC9F5E /* UIControl+ZBJBlock.h in Headers */,
-				042DD8D2DAF105E13295D956DC266B97 /* ZBJPoplar-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		70BCDA4251AB02F4D5103DEA69ECBC8C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BE466F0D6D59331EA1541F5E4377A0E8 /* Pods-ZBJPoplar_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A0CE739287460846D707282F345B24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C2E6CD557CDA5D4F5D4A631300AC973 /* NSArray+ZBJUtils.h in Headers */,
+				99986CD4141ED54ACBAA109980005423 /* NSData+ZBJUtils.h in Headers */,
+				7DF1BC8CB7EA124E175F5B06D8BDE78C /* NSString+ZBJUtils.h in Headers */,
+				00C120A6880923C4A7AFDBB127E05EAA /* UIControl+ZBJBlock.h in Headers */,
+				5AD25E6172FC9A5FC0AE927F13E1749C /* ZBJPoplar-umbrella.h in Headers */,
+				E9C3571556235A53F3C71C20F40432FC /* ZBJWeakTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +333,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6EC34C07FD6773101F0A9233D60BC92B /* PBXTargetDependency */,
+				D3EF3BBEE4AEBBADFE021A68D133B5C1 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZBJPoplar_Example";
 			productName = "Pods-ZBJPoplar_Example";
@@ -339,7 +352,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				94E4D2C09012605F01A07FC6E233C15F /* PBXTargetDependency */,
+				823504BF0D3AB7DD73529EF24B80321C /* PBXTargetDependency */,
 			);
 			name = "Pods-ZBJPoplar_Tests";
 			productName = "Pods-ZBJPoplar_Tests";
@@ -348,12 +361,12 @@
 		};
 		EE883A0D2AD8A370264797149BB9F84E /* ZBJPoplar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA1F2FBD4D3EEAEBEC72D695000ABA68 /* Build configuration list for PBXNativeTarget "ZBJPoplar" */;
+			buildConfigurationList = F2AF4F0EDBC5AFDC208ADFF48A1EB91A /* Build configuration list for PBXNativeTarget "ZBJPoplar" */;
 			buildPhases = (
-				043A9BCCC6118DF1CE568796E32CE86D /* Headers */,
-				8A50F3906D74C291EBEADBC7D11B18EE /* Sources */,
-				0CDDE6E0369343C47A67EE306671A845 /* Frameworks */,
-				5AB1AD3F98A581BCDCBEBB7D9ED43F53 /* Resources */,
+				A3A0CE739287460846D707282F345B24 /* Headers */,
+				EBC0DC8357D59E0707E2423F5410205E /* Sources */,
+				0D54AD001FF87BF8DF804C8A93745A71 /* Frameworks */,
+				B028A290D5389B5F3A21B91636B879E8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -401,14 +414,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AB1AD3F98A581BCDCBEBB7D9ED43F53 /* Resources */ = {
+		AD0EB2A0787BCBFC67429B7F1026C50C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD0EB2A0787BCBFC67429B7F1026C50C /* Resources */ = {
+		B028A290D5389B5F3A21B91636B879E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,18 +439,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A50F3906D74C291EBEADBC7D11B18EE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B0652DBBD3ABECEA2C1C99148E140A6 /* NSArray+ZBJUtils.m in Sources */,
-				E90F8A52490A650D4A01DB46B3723EF6 /* NSData+ZBJUtils.m in Sources */,
-				4F80C32A17B11286A7C216FB86913F45 /* NSString+ZBJUtils.m in Sources */,
-				E79F015A3114C9A0B656E0D50E4AAE1A /* UIControl+ZBJBlock.m in Sources */,
-				832042970427186CA2CBCCBA615504EA /* ZBJPoplar-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DD711DEC1978DFCEBBE315E5A77A8237 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,24 +447,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBC0DC8357D59E0707E2423F5410205E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B93E03589DE928D14DF10C92B1A412 /* NSArray+ZBJUtils.m in Sources */,
+				C2D9C2B1F50225B6E9FE55728E947284 /* NSData+ZBJUtils.m in Sources */,
+				F56CCD525AFF0350844B42DB3D584589 /* NSString+ZBJUtils.m in Sources */,
+				95C7B724AE410FDCCAE3FC5D6B1B8258 /* UIControl+ZBJBlock.m in Sources */,
+				25950F05175DB3DE66EFCAB6BAC0D7F8 /* ZBJPoplar-dummy.m in Sources */,
+				94373473F3F8E840A73FE023E593F56C /* ZBJWeakTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6EC34C07FD6773101F0A9233D60BC92B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZBJPoplar;
-			target = EE883A0D2AD8A370264797149BB9F84E /* ZBJPoplar */;
-			targetProxy = 93935F8C12572FBEFDCC80E920F46CE3 /* PBXContainerItemProxy */;
-		};
-		94E4D2C09012605F01A07FC6E233C15F /* PBXTargetDependency */ = {
+		823504BF0D3AB7DD73529EF24B80321C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZBJPoplar_Example";
 			target = 6067AF80612016564B37048F3A857471 /* Pods-ZBJPoplar_Example */;
-			targetProxy = 04C956A8647A7B16D111CD78C23F0AB7 /* PBXContainerItemProxy */;
+			targetProxy = 1DB60CC24B3C4D217ECAFCD2820CB1BD /* PBXContainerItemProxy */;
+		};
+		D3EF3BBEE4AEBBADFE021A68D133B5C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZBJPoplar;
+			target = EE883A0D2AD8A370264797149BB9F84E /* ZBJPoplar */;
+			targetProxy = DB14EFE89CA3F9BD3BA8E20E4E60882F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		12A63AC9543EC63AA798F4A519FE4528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C8F4DE656638509F2FF2F2ED4C874F /* ZBJPoplar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZBJPoplar/ZBJPoplar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZBJPoplar/ZBJPoplar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZBJPoplar/ZBJPoplar.modulemap";
+				PRODUCT_MODULE_NAME = ZBJPoplar;
+				PRODUCT_NAME = ZBJPoplar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -530,9 +574,9 @@
 			};
 			name = Debug;
 		};
-		7A3581671383090CE931E970D8C5AACE /* Release */ = {
+		2F5159B80658C3505F2F3FFF03040C44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14A4840CA4E86484D2E50C03D9E0AA1 /* ZBJPoplar.release.xcconfig */;
+			baseConfigurationReference = 4049748D955396E171FF315E581D28B9 /* ZBJPoplar.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -753,36 +797,6 @@
 			};
 			name = Debug;
 		};
-		FAC06B03AD922EC8A47FE893F1EA1E62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9EB66CAC1D1B07A34F6E2F20B7CA2F4 /* ZBJPoplar.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZBJPoplar/ZBJPoplar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZBJPoplar/ZBJPoplar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZBJPoplar/ZBJPoplar.modulemap";
-				PRODUCT_MODULE_NAME = ZBJPoplar;
-				PRODUCT_NAME = ZBJPoplar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -813,11 +827,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA1F2FBD4D3EEAEBEC72D695000ABA68 /* Build configuration list for PBXNativeTarget "ZBJPoplar" */ = {
+		F2AF4F0EDBC5AFDC208ADFF48A1EB91A /* Build configuration list for PBXNativeTarget "ZBJPoplar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAC06B03AD922EC8A47FE893F1EA1E62 /* Debug */,
-				7A3581671383090CE931E970D8C5AACE /* Release */,
+				12A63AC9543EC63AA798F4A519FE4528 /* Debug */,
+				2F5159B80658C3505F2F3FFF03040C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
