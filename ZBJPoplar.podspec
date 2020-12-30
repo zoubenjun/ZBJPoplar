@@ -34,6 +34,11 @@ Pod::Spec.new do |s|
 #  s.public_header_files = 'ZBJPoplar/Classes/**/*.h'
 #  s.source_files = 'ZBJPoplar/Classes/**/*'
   
+  s.subspec 'Macros' do |ss|
+    ss.public_header_files = 'ZBJPoplar/Classes/Macros/**/*.h'
+    ss.source_files = 'ZBJPoplar/Classes/Macros/**/*'
+  end
+
   s.subspec 'Category' do |ss|
 #    ss.public_header_files = 'ZBJPoplar/Classes/Category/**/*.h'
 #    ss.source_files = 'ZBJPoplar/Classes/Category/**/*'
@@ -52,8 +57,9 @@ Pod::Spec.new do |s|
   s.subspec 'Tools' do |ss|
     ss.public_header_files = 'ZBJPoplar/Classes/Tools/**/*.h'
     ss.source_files = 'ZBJPoplar/Classes/Tools/**/*'
+    ss.dependency 'ZBJPoplar/Macros'
   end
-  
+    
   # s.resource_bundles = {
   #   'ZBJPoplar' => ['ZBJPoplar/Assets/*.png']
   # }

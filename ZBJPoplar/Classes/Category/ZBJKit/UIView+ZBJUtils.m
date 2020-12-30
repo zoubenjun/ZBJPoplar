@@ -69,7 +69,7 @@
     self.frame = frame;
 }
 
-- (CGFloat)aspectScaledHeight {
+- (CGFloat)zbj_aspectScaledHeight {
     return self.frame.size.height;
 }
 
@@ -161,12 +161,10 @@
         UITabBarController *tabbar = (UITabBarController *)vc;
         UINavigationController *nav = (UINavigationController *)tabbar.viewControllers[tabbar.selectedIndex];
         result = nav.childViewControllers.lastObject;
-    }
-    else if ([vc isKindOfClass:[UINavigationController class]]) {
+    } else if ([vc isKindOfClass:[UINavigationController class]]) {
         UIViewController *nav = (UIViewController *)vc;
         result = nav.childViewControllers.lastObject;
-    }
-    else {
+    } else {
         result = vc;
     }
     
@@ -214,8 +212,7 @@
     borderLayer.position = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
     if (self.layer.cornerRadius > 0) {
         borderLayer.path = [UIBezierPath bezierPathWithRoundedRect:borderLayer.bounds cornerRadius:self.layer.cornerRadius].CGPath;
-    }
-    else {
+    } else {
         borderLayer.path = [UIBezierPath bezierPathWithRect:borderLayer.bounds].CGPath;
     }
     borderLayer.lineWidth = lineWidth / [UIScreen mainScreen].scale;

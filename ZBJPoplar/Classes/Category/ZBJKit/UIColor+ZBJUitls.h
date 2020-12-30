@@ -31,6 +31,17 @@ typedef NS_ENUM(NSUInteger, ZBJGradietColorType) {
 /// @param hexValue 0xFFFFFF
 /// @param alpha 透明度 [0,1]
 + (UIColor *)zbj_colorWithHexValue:(unsigned int)hexValue alpha:(CGFloat)alpha;
+/// 快捷设置颜色
+/// @param red [0,255]
+/// @param green  [0,255]
+/// @param blue  [0,255]
++ (UIColor *)zbj_colorWithRed:(float)red green:(float)green blue:(float)blue;
+/// 快捷设置颜色
+/// @param red [0,255]
+/// @param green [0,255]
+/// @param blue [0,255]
+/// @param alpha 透明度 [0,1]
++ (UIColor *)zbj_colorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;
 /// 渐变色
 /// @param colors 根据这些颜色渐变
 /// @param type  ZBJGradietColorType default:ZBJGradietColorTypeTopToBottom

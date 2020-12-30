@@ -21,6 +21,11 @@
   "frameworks": "UIKit",
   "subspecs": [
     {
+      "name": "Macros",
+      "public_header_files": "ZBJPoplar/Classes/Macros/**/*.h",
+      "source_files": "ZBJPoplar/Classes/Macros/**/*"
+    },
+    {
       "name": "Category",
       "subspecs": [
         {
@@ -38,7 +43,12 @@
     {
       "name": "Tools",
       "public_header_files": "ZBJPoplar/Classes/Tools/**/*.h",
-      "source_files": "ZBJPoplar/Classes/Tools/**/*"
+      "source_files": "ZBJPoplar/Classes/Tools/**/*",
+      "dependencies": {
+        "ZBJPoplar/Macros": [
+
+        ]
+      }
     }
   ]
 }

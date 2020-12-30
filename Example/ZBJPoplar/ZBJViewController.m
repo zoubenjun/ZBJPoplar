@@ -9,6 +9,8 @@
 #import "ZBJViewController.h"
 #import "NSArray+ZBJUtils.h"
 #import "UIColor+ZBJUitls.h"
+#import "ZBJBlur.h"
+#import "ZBJMacros.h"
 
 @interface ZBJViewController ()
 
@@ -29,6 +31,17 @@
     UIColor *color = [UIColor zbj_colorWithHexString:@"FF00FF"];
     NSLog(@"%@", color);
     
+    [self blur];
+}
+
+- (void)blur {
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:imgView];
+    [ZBJBlur zbj_blurImageView:imgView blurType:(ZBJImageBlurTypeGaussian) blurImage:[UIImage imageNamed:@"image"] blurRadius:70];
+    [ZBJBlur zbj_blurImageView:imgView blurType:(ZBJImageBlurTypeBlurEffect) blurImage:[UIImage imageNamed:@"image"] blurRadius:19];
+    //    [ZBJBlur zbj_blurImageView:imgView blurType:(ZBJImageBlurTypevImage) blurImage:[UIImage imageNamed:@"image"] blurRadius:0.7];
+//    [ZBJBlur zbj_blurImageView:imgView blurType:(ZBJImageBlurTypeMask) blurImage:[UIImage imageNamed:@"image"] blurRadius:0];
+
 }
 
 - (void)didReceiveMemoryWarning

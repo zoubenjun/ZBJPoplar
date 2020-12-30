@@ -31,7 +31,15 @@
 }
 
 + (UIColor *)zbj_colorWithHexValue:(unsigned int)hexValue alpha:(CGFloat)alpha {
-    return [UIColor colorWithRed:((hexValue & 0xFF0000) >> 16) / 255.0 green:((hexValue & 0xFF00) >> 8) / 255.0 blue:(hexValue & 0xFF) / 255.0 alpha:alpha];
+    return [[self class] zbj_colorWithRed:((hexValue & 0xFF0000) >> 16) green:((hexValue & 0xFF00) >> 8) blue:(hexValue & 0xFF) alpha:alpha];
+}
+
++ (UIColor *)zbj_colorWithRed:(float)red green:(float)green blue:(float)blue {
+    return [[self class] zbj_colorWithRed:red green:green blue:blue alpha:1];
+}
+
++ (UIColor *)zbj_colorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha {
+    return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:alpha];
 }
 
 + (UIColor *)zbj_gradientColorWithColors:(NSArray *)colors type:(ZBJGradietColorType)type size:(CGSize)size {

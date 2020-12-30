@@ -1,13 +1,16 @@
 PODS:
   - ZBJPoplar (0.1.12):
     - ZBJPoplar/Category (= 0.1.12)
+    - ZBJPoplar/Macros (= 0.1.12)
     - ZBJPoplar/Tools (= 0.1.12)
   - ZBJPoplar/Category (0.1.12):
     - ZBJPoplar/Category/ZBJFoundation (= 0.1.12)
     - ZBJPoplar/Category/ZBJKit (= 0.1.12)
   - ZBJPoplar/Category/ZBJFoundation (0.1.12)
   - ZBJPoplar/Category/ZBJKit (0.1.12)
-  - ZBJPoplar/Tools (0.1.12)
+  - ZBJPoplar/Macros (0.1.12)
+  - ZBJPoplar/Tools (0.1.12):
+    - ZBJPoplar/Macros
 
 DEPENDENCIES:
   - ZBJPoplar (from `../`)
@@ -17,7 +20,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZBJPoplar: e8d1c5b8ad16de69810a7a38c314c11a90a983f8
+  ZBJPoplar: 4626656cc3db14ff43a6eadee323e8166cdb01bc
 
 PODFILE CHECKSUM: 4eb778f84a5494b74cc5196ba0d69809c18032f3
 

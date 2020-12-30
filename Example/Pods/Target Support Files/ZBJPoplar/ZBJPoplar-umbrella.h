@@ -15,8 +15,11 @@
 #import "NSString+ZBJUtils.h"
 #import "UIColor+ZBJUitls.h"
 #import "UIControl+ZBJBlock.h"
+#import "UIImageView+ZBJBlur.h"
 #import "UILabel+ZBJUtils.h"
 #import "UIView+ZBJUtils.h"
+#import "ZBJMacros.h"
+#import "ZBJSystemInfo.h"
 #import "ZBJWeakTimer.h"
 
 FOUNDATION_EXPORT double ZBJPoplarVersionNumber;

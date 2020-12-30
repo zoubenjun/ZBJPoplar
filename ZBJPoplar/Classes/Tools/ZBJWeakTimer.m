@@ -29,7 +29,7 @@
 
 @implementation ZBJWeakTimer
 
-+ (NSTimer *)zbj_scheduledTimerWithTimeInterval:(NSTimeInterval)interval target:(id)target selector:(SEL)selector userInfo:(id)userInfo repeats:(BOOL)repeats {
++ (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval target:(id)target selector:(SEL)selector userInfo:(id)userInfo repeats:(BOOL)repeats {
     ZBJWeakTimerTarget* timerTarget = [[ZBJWeakTimerTarget alloc] init];
     timerTarget.target = target;
     timerTarget.selector = selector;
