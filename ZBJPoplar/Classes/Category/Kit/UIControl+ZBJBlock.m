@@ -7,6 +7,7 @@
 
 #import "UIControl+ZBJBlock.h"
 #import <objc/runtime.h>
+#import "ZBJMacros.h"
 
 static const void *ZBJControlActionsKey = &ZBJControlActionsKey;
 
@@ -14,10 +15,10 @@ static const void *ZBJControlActionsKey = &ZBJControlActionsKey;
 
 @interface ZBJControlTarget : NSObject <NSCopying>
 
-- (id)initWithAction:(void (^)(id sender))action forControlEvents:(UIControlEvents)controlEvents;
-
-@property (nonatomic) UIControlEvents controlEvents;
+@property (nonatomic, assign) UIControlEvents controlEvents;
 @property (nonatomic, copy) void (^action)(id sender);
+
+- (id)initWithAction:(void (^)(id sender))action forControlEvents:(UIControlEvents)controlEvents;
 
 @end
 
@@ -25,11 +26,11 @@ static const void *ZBJControlActionsKey = &ZBJControlActionsKey;
 
 - (id)initWithAction:(void (^)(id sender))action forControlEvents:(UIControlEvents)controlEvents {
     self = [super init];
-    if (!self) return nil;
-
-    self.action = action;
-    self.controlEvents = controlEvents;
-
+    if (self) {
+        self.action = [action copy];
+        self.controlEvents = controlEvents;
+    }
+    
     return self;
 }
 
@@ -38,7 +39,7 @@ static const void *ZBJControlActionsKey = &ZBJControlActionsKey;
 }
 
 - (void)invoke:(id)sender {
-    self.action(sender);
+    kBlockSafeRun(self.action, sender);
 }
 
 @end
@@ -46,14 +47,20 @@ static const void *ZBJControlActionsKey = &ZBJControlActionsKey;
 
 @implementation UIControl (ZBJBlock)
 
-- (void)zbj_addAction:(void (^)(id sender))action forControlEvents:(UIControlEvents)controlEvents {
-    NSParameterAssert(action);
-    
+- (NSMutableDictionary *)_zbj_allEvents {
     NSMutableDictionary *events = objc_getAssociatedObject(self, ZBJControlActionsKey);
     if (!events) {
         events = [NSMutableDictionary dictionary];
         objc_setAssociatedObject(self, ZBJControlActionsKey, events, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
+    return targets;
+}
+
+- (void)zbj_addAction:(void (^)(id sender))action forControlEvents:(UIControlEvents)controlEvents {
+    NSParameterAssert(action);
+    NSParameterAssert(controlEvents);
+
+    NSMutableDictionary *events = [self _zbj_allEvents];
 
     NSNumber *key = @(controlEvents);
     NSMutableSet *actions = events[key];
@@ -68,11 +75,7 @@ static const void *ZBJControlActionsKey = &ZBJControlActionsKey;
 }
 
 - (void)zbj_removeActionsForControlEvents:(UIControlEvents)controlEvents {
-    NSMutableDictionary *events = objc_getAssociatedObject(self, ZBJControlActionsKey);
-    if (!events) {
-        events = [NSMutableDictionary dictionary];
-        objc_setAssociatedObject(self, ZBJControlActionsKey, events, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
+    NSMutableDictionary *events = [self _zbj_allEvents];
 
     NSNumber *key = @(controlEvents);
     NSSet *actions = events[key];
@@ -86,6 +89,13 @@ static const void *ZBJControlActionsKey = &ZBJControlActionsKey;
     }];
 
     [events removeObjectForKey:key];
+}
+
+- (void)zbj_removeAllTargets {
+    [[self allTargets] enumerateObjectsUsingBlock: ^(id object, BOOL *stop) {
+        [self removeTarget:object action:NULL forControlEvents:UIControlEventAllEvents];
+    }];
+    [[self _zbj_allEvents] removeAllObjects];
 }
 
 @end

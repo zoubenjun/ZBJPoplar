@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 删除事件
 /// @param controlEvents 事件类型
 - (void)zbj_removeActionsForControlEvents:(UIControlEvents)controlEvents;
+/// 删除全部事件
+- (void)zbj_removeAllTargets;
 @end
 
 NS_ASSUME_NONNULL_END
