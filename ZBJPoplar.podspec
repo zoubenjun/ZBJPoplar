@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZBJPoplar'
-  s.version          = '0.1.12'
+  s.version          = '0.1.13'
   s.summary          = 'Personal Cagegory, Utils.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  Personal Category, Utils. ZBJPoplar named by my son, a lovely boy.
+    Personal Category, Utils. ZBJPoplar named by my son, a lovely boy.
                        DESC
 
   s.homepage         = 'https://github.com/zoubenjun/ZBJPoplar'
@@ -31,8 +31,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.frameworks = 'UIKit'
-#  s.public_header_files = 'ZBJPoplar/Classes/**/*.h'
-#  s.source_files = 'ZBJPoplar/Classes/**/*'
+  s.public_header_files = 'ZBJPoplar/Classes/*.h'
+  s.source_files = 'ZBJPoplar/Classes/*'
   
   s.subspec 'Macros' do |ss|
     ss.public_header_files = 'ZBJPoplar/Classes/Macros/**/*.h'
@@ -43,14 +43,16 @@ Pod::Spec.new do |s|
 #    ss.public_header_files = 'ZBJPoplar/Classes/Category/**/*.h'
 #    ss.source_files = 'ZBJPoplar/Classes/Category/**/*'
     
-    ss.subspec 'ZBJFoundation' do |ss|
-      ss.public_header_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*.h'
-      ss.source_files = 'ZBJPoplar/Classes/Category/ZBJFoundation/**/*'
+    ss.subspec 'Foundation' do |ss|
+      ss.public_header_files = 'ZBJPoplar/Classes/Category/Foundation/**/*.h'
+      ss.source_files = 'ZBJPoplar/Classes/Category/Foundation/**/*'
+      ss.dependency 'ZBJPoplar/Macros'
     end
     
-    ss.subspec 'ZBJKit' do |ss|
-      ss.public_header_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*.h'
-      ss.source_files = 'ZBJPoplar/Classes/Category/ZBJKit/**/*'
+    ss.subspec 'Kit' do |ss|
+      ss.public_header_files = 'ZBJPoplar/Classes/Category/Kit/**/*.h'
+      ss.source_files = 'ZBJPoplar/Classes/Category/Kit/**/*'
+      ss.dependency 'ZBJPoplar/Macros'
     end
   end
   

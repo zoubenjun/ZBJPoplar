@@ -53,7 +53,7 @@ static const void *ZBJControlActionsKey = &ZBJControlActionsKey;
         events = [NSMutableDictionary dictionary];
         objc_setAssociatedObject(self, ZBJControlActionsKey, events, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    return targets;
+    return events;
 }
 
 - (void)zbj_addAction:(void (^)(id sender))action forControlEvents:(UIControlEvents)controlEvents {

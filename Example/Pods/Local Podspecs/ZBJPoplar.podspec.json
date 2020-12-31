@@ -19,6 +19,8 @@
     "ios": "9.0"
   },
   "frameworks": "UIKit",
+  "public_header_files": "ZBJPoplar/Classes/*.h",
+  "source_files": "ZBJPoplar/Classes/*",
   "subspecs": [
     {
       "name": "Macros",
@@ -29,14 +31,24 @@
       "name": "Category",
       "subspecs": [
         {
-          "name": "ZBJFoundation",
-          "public_header_files": "ZBJPoplar/Classes/Category/ZBJFoundation/**/*.h",
-          "source_files": "ZBJPoplar/Classes/Category/ZBJFoundation/**/*"
+          "name": "Foundation",
+          "public_header_files": "ZBJPoplar/Classes/Category/Foundation/**/*.h",
+          "source_files": "ZBJPoplar/Classes/Category/Foundation/**/*",
+          "dependencies": {
+            "ZBJPoplar/Macros": [
+
+            ]
+          }
         },
         {
-          "name": "ZBJKit",
-          "public_header_files": "ZBJPoplar/Classes/Category/ZBJKit/**/*.h",
-          "source_files": "ZBJPoplar/Classes/Category/ZBJKit/**/*"
+          "name": "Kit",
+          "public_header_files": "ZBJPoplar/Classes/Category/Kit/**/*.h",
+          "source_files": "ZBJPoplar/Classes/Category/Kit/**/*",
+          "dependencies": {
+            "ZBJPoplar/Macros": [
+
+            ]
+          }
         }
       ]
     },
