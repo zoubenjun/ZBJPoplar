@@ -39,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param lineWidth 虚线宽度
 /// @param spaceArray 虚线长度和间隔长度
 - (void)zbj_dashBorderWithLineColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth spaceArray:(NSArray<NSNumber*>*)spaceArray;
+/// 截图
+- (nullable UIImage *)zbj_snapshotImage;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -222,4 +222,11 @@
     [self.layer addSublayer:borderLayer];
 }
 
+- (UIImage *)zbj_snapshotImage {
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *snap = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return snap;
+}
 @end
