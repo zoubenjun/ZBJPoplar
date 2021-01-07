@@ -22,6 +22,7 @@
 #import "UIImageView+ZBJBlur.h"
 #import "UILabel+ZBJUtils.h"
 #import "UIView+ZBJUtils.h"
+#import "UIImage+ZBJUtils.h"
 
 //Tools
 #import "ZBJSystemInfo.h"

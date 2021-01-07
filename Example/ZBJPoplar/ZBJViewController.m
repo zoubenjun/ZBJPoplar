@@ -36,7 +36,34 @@
     [self.view addSubview:imgView];
     //    [ZBJBlur zbj_blurImageView:imgView blurType:(ZBJImageBlurTypevImage) blurImage:[UIImage imageNamed:@"image"] blurRadius:0.7];
 //    [ZBJBlur zbj_blurImageView:imgView blurType:(ZBJImageBlurTypeMask) blurImage:[UIImage imageNamed:@"image"] blurRadius:0];
+}
 
+
+- (void)systemShareWithText:(NSString *)text image:(UIImage *)image url:(NSURL *)url completeBlock:(UIActivityViewControllerCompletionWithItemsHandler)completeBlock {
+    NSMutableArray *activityItems = [NSMutableArray array];
+    if (text) {
+        [activityItems addObject:text];
+    }
+    if (image) {
+        [activityItems addObject:image];
+    }
+    if (url) {
+        [activityItems addObject:url];
+    }
+    if (activityItems.count == 0) {
+        return;
+    }
+    
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    UIActivityViewControllerCompletionWithItemsHandler myBlock = ^(UIActivityType activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
+        if (completeBlock) {
+            completeBlock(activityType, completed, returnedItems, activityError);
+        }
+        [vc dismissViewControllerAnimated:YES completion:nil];
+    };
+    vc.completionWithItemsHandler = myBlock;
+
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

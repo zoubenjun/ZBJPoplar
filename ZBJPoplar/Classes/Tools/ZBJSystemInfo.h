@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *bundleShortVersion;
 @property (nonatomic, copy, readonly) NSString *uuid;
 @property (nonatomic, copy, readonly) NSString *idfa;
-@property (nonatomic, copy, readonly) NSString *deviceLanguage;
-@property (nonatomic, copy, readonly) NSString *platform;
+@property (nonatomic, copy, readonly) NSString *deviceLanguage;//系统语言
+@property (nonatomic, copy, readonly) NSString *platform;//Hardware type
 @property (nonatomic, copy, readonly) NSString *systemVersion;
 @property (nonatomic, copy, readonly) NSString *cpuType;
 @property (nonatomic, copy, readonly) NSString *osVersion;
