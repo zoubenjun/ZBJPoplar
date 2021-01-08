@@ -252,7 +252,7 @@ NS_INLINE CGFloat DegreesToRadians(CGFloat degrees) {
     return [self zbj_imageByRotate:DegreesToRadians(90) fitSize:YES];
 }
 
-- (UIImage *)imageByRotateRight90 {
+- (UIImage *)zbj_imageByRotateRight90 {
     return [self zbj_imageByRotate:DegreesToRadians(-90) fitSize:YES];
 }
 

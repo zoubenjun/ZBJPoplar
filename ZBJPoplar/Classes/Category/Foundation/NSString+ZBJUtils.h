@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// base64Decode & urlDecode
 - (NSString *)zbj_base64UrlDecode;
 /// md5
-- (NSString *)zbj_md5;
+- (NSString *)zbj_md5String;
 /// 汉字转拼音
 - (NSString *)zbj_pinyin;
 /// 计算字符串size

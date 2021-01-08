@@ -58,6 +58,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// flatten 把多维数组变成一维数组
 /// @return 一维数组
 - (NSArray *)zbj_flatten;
+/// 翻转数组
+- (NSArray *)zbj_reverse;
+@end
+
+@interface NSMutableArray (ZBJUtils)
+
+/// 删除第一个
+- (void)zbj_removeFirstObject;
+/// 翻转数组
+- (void)zbj_reverse;
+
 @end
 
 NS_ASSUME_NONNULL_END

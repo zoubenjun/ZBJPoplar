@@ -14,6 +14,10 @@
 //ZBJFoundation
 #import "NSArray+ZBJUtils.h"
 #import "NSData+ZBJUtils.h"
+#import "NSDate+ZBJUtils.h"
+#import "NSDictionary+ZBJUtils.h"
+#import "NSNumber+ZBJUtils.h"
+#import "NSObject+ZBJUtils.h"
 #import "NSString+ZBJUtils.h"
 
 //ZBJKit

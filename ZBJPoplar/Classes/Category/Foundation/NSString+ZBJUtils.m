@@ -164,7 +164,7 @@
     return decodedString;
 }
 
-- (NSString *)zbj_md5 {
+- (NSString *)zbj_md5String {
     const char *cStr = [self UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(cStr, (int)strlen(cStr), result);

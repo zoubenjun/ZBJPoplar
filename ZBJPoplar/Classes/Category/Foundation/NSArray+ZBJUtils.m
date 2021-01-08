@@ -134,4 +134,33 @@
     return [array copy];
 }
 
+- (NSArray *)zbj_reverse {
+    NSMutableArray *mArr = [NSMutableArray arrayWithArray:self];
+    NSUInteger count = self.count;
+    int mid = floor(count / 2.0);
+    for (NSUInteger i = 0; i < mid; i++) {
+        [mArr exchangeObjectAtIndex:i withObjectAtIndex:(count - (i + 1))];
+    }
+
+    return mArr.copy;
+}
+
+@end
+
+@implementation NSMutableArray (ZBJUtils)
+
+- (void)zbj_removeFirstObject {
+    if (self.count) {
+        [self removeObjectAtIndex:0];
+    }
+}
+
+- (void)zbj_reverse {
+    NSUInteger count = self.count;
+    int mid = floor(count / 2.0);
+    for (NSUInteger i = 0; i < mid; i++) {
+        [self exchangeObjectAtIndex:i withObjectAtIndex:(count - (i + 1))];
+    }
+}
+
 @end

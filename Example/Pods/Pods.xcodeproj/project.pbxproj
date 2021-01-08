@@ -32,6 +32,14 @@
 		B51314918AE685CB0EFD1105357A9A23 /* UIView+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1E71A1284D3683A7830169A1C7A2E /* UIView+ZBJUtils.m */; };
 		BD13320725A708CF00ED0A6C /* UIImage+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BD13320525A708CF00ED0A6C /* UIImage+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD13320825A708CF00ED0A6C /* UIImage+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD13320625A708CF00ED0A6C /* UIImage+ZBJUtils.m */; };
+		BD13321625A7F2F600ED0A6C /* NSDate+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BD13321425A7F2F600ED0A6C /* NSDate+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD13321725A7F2F600ED0A6C /* NSDate+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD13321525A7F2F600ED0A6C /* NSDate+ZBJUtils.m */; };
+		BD13322025A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BD13321E25A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD13322125A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD13321F25A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.m */; };
+		BD13322A25A7FEE300ED0A6C /* NSNumber+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BD13322825A7FEE300ED0A6C /* NSNumber+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD13322B25A7FEE300ED0A6C /* NSNumber+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD13322925A7FEE300ED0A6C /* NSNumber+ZBJUtils.m */; };
+		BD13323425A8006E00ED0A6C /* NSObject+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BD13323225A8006E00ED0A6C /* NSObject+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD13323525A8006E00ED0A6C /* NSObject+ZBJUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD13323325A8006E00ED0A6C /* NSObject+ZBJUtils.m */; };
 		BE466F0D6D59331EA1541F5E4377A0E8 /* Pods-ZBJPoplar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF278684AD20D594788BD2664C79D2F /* Pods-ZBJPoplar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFA4472E1F430DCE46F872518721B7E8 /* NSArray+ZBJUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD414677137FB86C38D8F0C7385BDEE /* NSArray+ZBJUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D524CC71F687B2A0FF0D671E41144761 /* ZBJPoplar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FE2C781A34388D5F97440D962C8C27 /* ZBJPoplar-dummy.m */; };
@@ -97,6 +105,14 @@
 		BCA93427A66CC283EA214E8A3B7EA23C /* ZBJSystemInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZBJSystemInfo.h; path = ZBJPoplar/Classes/Tools/ZBJSystemInfo.h; sourceTree = "<group>"; };
 		BD13320525A708CF00ED0A6C /* UIImage+ZBJUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+ZBJUtils.h"; path = "ZBJPoplar/Classes/Category/Kit/UIImage+ZBJUtils.h"; sourceTree = "<group>"; };
 		BD13320625A708CF00ED0A6C /* UIImage+ZBJUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ZBJUtils.m"; path = "ZBJPoplar/Classes/Category/Kit/UIImage+ZBJUtils.m"; sourceTree = "<group>"; };
+		BD13321425A7F2F600ED0A6C /* NSDate+ZBJUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZBJUtils.h"; sourceTree = "<group>"; };
+		BD13321525A7F2F600ED0A6C /* NSDate+ZBJUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZBJUtils.m"; sourceTree = "<group>"; };
+		BD13321E25A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZBJUtils.h"; sourceTree = "<group>"; };
+		BD13321F25A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZBJUtils.m"; sourceTree = "<group>"; };
+		BD13322825A7FEE300ED0A6C /* NSNumber+ZBJUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ZBJUtils.h"; sourceTree = "<group>"; };
+		BD13322925A7FEE300ED0A6C /* NSNumber+ZBJUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ZBJUtils.m"; sourceTree = "<group>"; };
+		BD13323225A8006E00ED0A6C /* NSObject+ZBJUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZBJUtils.h"; sourceTree = "<group>"; };
+		BD13323325A8006E00ED0A6C /* NSObject+ZBJUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZBJUtils.m"; sourceTree = "<group>"; };
 		C3511270D311DF612B360808A1DB9ACA /* Pods-ZBJPoplar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZBJPoplar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C58BED94BD597DA9BE23FB5477B3FAC8 /* Pods-ZBJPoplar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZBJPoplar_Tests-dummy.m"; sourceTree = "<group>"; };
 		C9FE2C781A34388D5F97440D962C8C27 /* ZBJPoplar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZBJPoplar-dummy.m"; sourceTree = "<group>"; };
@@ -266,6 +282,14 @@
 				A531F2B2D43B4462CF06EC58728DFE64 /* NSArray+ZBJUtils.m */,
 				4AA649C2D2E7DF985911F6208B8E7FBA /* NSData+ZBJUtils.h */,
 				07C201DE1528D1F190F0FB0168631488 /* NSData+ZBJUtils.m */,
+				BD13321425A7F2F600ED0A6C /* NSDate+ZBJUtils.h */,
+				BD13321525A7F2F600ED0A6C /* NSDate+ZBJUtils.m */,
+				BD13321E25A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.h */,
+				BD13321F25A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.m */,
+				BD13322825A7FEE300ED0A6C /* NSNumber+ZBJUtils.h */,
+				BD13322925A7FEE300ED0A6C /* NSNumber+ZBJUtils.m */,
+				BD13323225A8006E00ED0A6C /* NSObject+ZBJUtils.h */,
+				BD13323325A8006E00ED0A6C /* NSObject+ZBJUtils.m */,
 				12C1089A5FC49ED6416D14A47705BC56 /* NSString+ZBJUtils.h */,
 				2937A19FECBFA6D4422F6E72B8B54D09 /* NSString+ZBJUtils.m */,
 			);
@@ -346,16 +370,20 @@
 				CFA4472E1F430DCE46F872518721B7E8 /* NSArray+ZBJUtils.h in Headers */,
 				F751ED5C2A2C3646D897F8E05DBDADCB /* NSData+ZBJUtils.h in Headers */,
 				3A882965520D09A873CD1CB4F1D96B89 /* NSString+ZBJUtils.h in Headers */,
+				BD13323425A8006E00ED0A6C /* NSObject+ZBJUtils.h in Headers */,
 				6BF803A8D707FEBA125C6680A2E3E411 /* UIColor+ZBJUitls.h in Headers */,
 				EAAA5A2B51295B0960AEA0BE800CCF1D /* UIControl+ZBJBlock.h in Headers */,
 				0CF2DA4E5717ADF57D148CA4E1C3F673 /* UIImageView+ZBJBlur.h in Headers */,
+				BD13322025A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.h in Headers */,
 				1BC60C3C3EEB725D122D57D5A76D5E57 /* UILabel+ZBJUtils.h in Headers */,
 				EEF57483A67F9B54E2B9F26287CD3626 /* UIView+ZBJUtils.h in Headers */,
 				E04CF2637782485323C207DA9C819F1D /* ZBJMacros.h in Headers */,
 				0D8A5FBD0620ACF81F2E7F89B4D9C811 /* ZBJPoplar-umbrella.h in Headers */,
+				BD13322A25A7FEE300ED0A6C /* NSNumber+ZBJUtils.h in Headers */,
 				2E4CE876863FA3E67C88137084E69936 /* ZBJPoplar.h in Headers */,
 				BD13320725A708CF00ED0A6C /* UIImage+ZBJUtils.h in Headers */,
 				B0BF26A34B173B962D80A75AC78B07E6 /* ZBJSystemInfo.h in Headers */,
+				BD13321625A7F2F600ED0A6C /* NSDate+ZBJUtils.h in Headers */,
 				E785E4909E2419C4D2B140DDA4FC5207 /* ZBJWeakTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,11 +529,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD13321725A7F2F600ED0A6C /* NSDate+ZBJUtils.m in Sources */,
 				BD13320825A708CF00ED0A6C /* UIImage+ZBJUtils.m in Sources */,
+				BD13322B25A7FEE300ED0A6C /* NSNumber+ZBJUtils.m in Sources */,
 				1C85CAEEFA2852B01C55878B631211E1 /* NSArray+ZBJUtils.m in Sources */,
 				931BD65BCD7179EBFD68B022AF6DA9C7 /* NSData+ZBJUtils.m in Sources */,
 				925E2A20D0F397585C4A729679F39E1B /* NSString+ZBJUtils.m in Sources */,
+				BD13322125A7FC2A00ED0A6C /* NSDictionary+ZBJUtils.m in Sources */,
 				84F8341D80D930498D0CDAF99B0E06CC /* UIColor+ZBJUitls.m in Sources */,
+				BD13323525A8006E00ED0A6C /* NSObject+ZBJUtils.m in Sources */,
 				03C43F7A097FE3267903E6101C10CA63 /* UIControl+ZBJBlock.m in Sources */,
 				7E6D2425DE586E70B56706CE6261C9DF /* UIImageView+ZBJBlur.m in Sources */,
 				17F947A4EDCEC47AA314F3E71D58FCD9 /* UILabel+ZBJUtils.m in Sources */,
